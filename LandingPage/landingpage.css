@@ -1551,22 +1551,24 @@ hr {
     overflow: hidden;
     position: relative;
     margin-top: 20px;
+    cursor: grab;
   }
-
+  
   .photo-gallery-scroll {
     width: 100%;
     overflow: hidden;
   }
-
+  
   .photo-gallery-track {
     display: flex;
     animation: scroll 40s linear infinite;
+    transition: transform 0.3s ease;
   }
-
+  
   .photo-gallery-track:hover {
     animation-play-state: paused;
   }
-
+  
   .gallery-img {
     min-width: 250px;
     height: 200px;
